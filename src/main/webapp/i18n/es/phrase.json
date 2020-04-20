@@ -1,0 +1,24 @@
+{
+  "springBootDemoApp": {
+    "phrase": {
+      "home": {
+        "title": "Phrases",
+        "createLabel": "Crear nuevo Phrase",
+        "createOrEditLabel": "Crear o editar Phrase",
+        "notFound": "Ningún Phrases encontrado"
+      },
+      "created": "Un nuevo Phrase ha sido creado con el identificador {{ param }}",
+      "updated": "Un Phrase ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Phrase ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Phrase {{ id }}?"
+      },
+      "detail": {
+        "title": "Phrase"
+      },
+      "author": "Author",
+      "text": "Text",
+      "referense": "Referense"
+    }
+  }
+}

@@ -6,6 +6,7 @@ configurations {
 }
 
 dependencies {
+    compile 'org.jsoup:jsoup:1.13.1'
     developmentOnly "org.springframework.boot:spring-boot-devtools"
     implementation "com.h2database:h2"
 }

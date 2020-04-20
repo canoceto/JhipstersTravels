@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import './vendor';
 import { SpringBootDemoSharedModule } from 'app/shared/shared.module';
 import { SpringBootDemoCoreModule } from 'app/core/core.module';
@@ -23,7 +23,8 @@ import { ErrorComponent } from './layouts/error/error.component';
     SpringBootDemoHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     SpringBootDemoEntityModule,
-    SpringBootDemoAppRoutingModule
+    SpringBootDemoAppRoutingModule,
+    MDBBootstrapModule.forRoot()
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [MainComponent]

@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="phrase">
+            <h2><span jhiTranslate="springBootDemoApp.phrase.detail.title">Phrase</span> {{phrase.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="springBootDemoApp.phrase.author">Author</span></dt>
+                <dd>
+                    <span>{{phrase.author}}</span>
+                </dd>
+                <dt><span jhiTranslate="springBootDemoApp.phrase.text">Text</span></dt>
+                <dd>
+                    <span>{{phrase.text}}</span>
+                </dd>
+                <dt><span jhiTranslate="springBootDemoApp.phrase.referense">Referense</span></dt>
+                <dd>
+                    <span>{{phrase.referense}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/phrase', phrase.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
