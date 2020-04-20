@@ -23,8 +23,8 @@ import { ErrorComponent } from './layouts/error/error.component';
     SpringBootDemoHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     SpringBootDemoEntityModule,
-    SpringBootDemoAppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    SpringBootDemoAppRoutingModule
+    // MDBBootstrapModule.forRoot()
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [MainComponent]
